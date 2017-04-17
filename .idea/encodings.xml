@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/omg-framework-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/omg-xxx/omg-xxx-dal/src/main/java/com/omg/xxx/dal/dao/UserMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/omg-xxx/omg-xxx-dal/src/main/java/com/omg/xxx/dal/model/User.java" charset="UTF-8" />
+  </component>
+</project>
