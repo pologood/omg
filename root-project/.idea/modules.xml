@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../omg-framework-data/omg-framework-data.iml" filepath="$PROJECT_DIR$/../omg-framework-data/omg-framework-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg-xxx-dal.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg-xxx-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-service/omg-xxx-service.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-service/omg-xxx-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg.xxx.dal.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg.xxx.dal.iml" />
+    </modules>
+  </component>
+</project>

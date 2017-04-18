@@ -10,9 +10,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>omg.xxx.dal</artifactId>
+    <artifactId>omg-xxx-dal</artifactId>
+    <packaging>jar</packaging>
+    <name>Data Access Layer</name>
 
     <dependencies>
+        <!-- ==================== framework ==================== -->
+        <dependency>
+            <groupId>com.omg.framework</groupId>
+            <artifactId>omg-framework-data</artifactId>
+        </dependency>
+
         <!-- ==================== druid ==================== -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -36,10 +44,16 @@
         </dependency>
 
 
+        <!-- ==================== spring ==================== -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+
 
     </dependencies>
 

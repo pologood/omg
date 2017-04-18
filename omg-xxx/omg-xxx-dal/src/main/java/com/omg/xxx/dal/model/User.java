@@ -16,6 +16,8 @@ public class User  {
 	@GeneratedValue(generator = "JDBC")
 	private Long id;
 
+	private String userId;
+
 	private String name;
 
 	public Long getId() {
@@ -24,6 +26,14 @@ public class User  {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public String getName() {
