@@ -9,16 +9,11 @@
 
 	<select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Long">
 		select id, user_id, name
-		from tb_user
+		from t_xxx_user
 		where id = #{id,jdbcType=BIGINT}
 	</select>
 
-	<insert id="insert" parameterType="com.omg.xxx.dal.model.User">
-		insert into tb_user (id, user_id, name)
-		values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=CHAR}),#{name,jdbcType=VARCHAR})
-	</insert>
-	
 	<delete id="deleteById" parameterType="java.lang.Long">
-	    delete from tb_user where id = #{id,jdbcType=BIGINT}
+	    delete from t_xxx_user where id = #{id,jdbcType=BIGINT}
   </delete>
 </mapper>

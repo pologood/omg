@@ -28,13 +28,15 @@
 		<property name="beanNames">
 			<list>
 				<value>*Service</value>
+				<value>*ServiceImpl</value>
 			</list>
 		</property>
 		<property name="interceptorNames">
 			<list>
-				<value>readWriteInterceptor</value>
-				<value>transactionInterceptor</value>
+				<!--<value>readWriteInterceptor</value>-->
+				<!--<value>transactionInterceptor</value>-->
 			</list>
 		</property>
 	</bean>
+
 </beans>

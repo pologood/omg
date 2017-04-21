@@ -109,9 +109,9 @@
 	</bean>
 
 	<!-- 读写拦截器 -->
-	<bean id="readWriteInterceptor" class="com.omg.framework.data.interceptor.ReadWriteInterceptor">
-		<property name="readWriteKey" ref="readWriteKey" />
-	</bean>
+	<!--<bean id="readWriteInterceptor" class="com.omg.framework.data.interceptor.ReadWriteInterceptor">-->
+		<!--<property name="readWriteKey" ref="readWriteKey" />-->
+	<!--</bean>-->
 
 	<!-- MyBatis, 分页 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -123,9 +123,9 @@
 				<!--<bean class="com.eif.framework.log.client.mybatis.MyBatisInterceptor" />-->
 				<!--<bean class="com.eif.framework.log.client.mybatis.MyBatisQueryInterceptor" />-->
 				<!--<bean class="com.eif.framework.log.client.mybatis.MyBatisUpdateInterceptor" />-->
-				<!--<bean class="com.eif.framework.pagination.pagehelper.PageHelper">-->
-					<!--<property name="properties" value="dialect=mysql" />-->
-				<!--</bean>-->
+				<bean class="com.omg.framework.data.mybatis.pagination.pagehelper.PageHelper">
+					<property name="properties" value="dialect=mysql" />
+				</bean>
 			</array>
 		</property>
 	</bean>
@@ -143,8 +143,9 @@
 
 	<!-- 事务管理器 -->
 	<bean id="transactionManager"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		class="com.omg.framework.data.transaction.ReadWriteTransactionManager">
 		<property name="dataSource" ref="dataSource" />
+		<property name="readWriteKey" ref="readWriteKey" />
 	</bean>
 	
 	<!-- 事务拦截器 -->
