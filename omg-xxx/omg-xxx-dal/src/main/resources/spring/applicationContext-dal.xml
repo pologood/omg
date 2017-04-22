@@ -160,10 +160,10 @@
 
 
 
-	<!--<bean id="zkId20Generator" class="com.eif.framework.common.id.impl.ZkId20Generator">-->
-		<!--<property name="zkAddress" value="${zk.address}" />-->
-		<!--<property name="moduleName" value="${module.name}" />-->
-		<!--<property name="idNodeName" value="${id.node.name.20}" />-->
-	<!--</bean>-->
+	<bean id="zkId20Generator" class="com.omg.framework.common.id.impl.ZkId20Generator">
+		<property name="zkAddress" value="${zk.address}" />
+		<property name="moduleName" value="${module.name}" />
+		<property name="idNodeName" value="${id.node.name.20}" />
+	</bean>
 
 </beans>

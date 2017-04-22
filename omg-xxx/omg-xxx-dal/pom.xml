@@ -20,6 +20,10 @@
             <groupId>com.omg.framework</groupId>
             <artifactId>omg-framework-data</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.omg.framework</groupId>
+            <artifactId>omg-framework-common-utils</artifactId>
+        </dependency>
 
         <!-- ==================== druid ==================== -->
         <dependency>

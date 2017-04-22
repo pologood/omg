@@ -39,4 +39,24 @@
 		</property>
 	</bean>
 
+	<!-- AOP start -->
+	<bean id="adapterErrorRespAdvice" class="com.omg.xxx.service.interceptor.MyInterceptor" />
+
+	<bean id="adapterClassFilter" class="com.omg.xxx.service.interceptor.RegexMatchClassFilter" >
+		<property name="patten" value="com.eif.paycore.service.impl.provider.*Adapter" />
+	</bean>
+
+	<bean id="adapterAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor" >
+		<property name="mappedNames">
+			<list>
+				<value>add</value>
+				<value>resumeAdd</value>
+				<value>bindDCPPaymentInstrumentAndCharge</value>
+				<value>resumePayment</value>
+			</list>
+		</property>
+		<property name="advice" ref="adapterErrorRespAdvice" />
+		<property name="classFilter" ref="adapterClassFilter" />
+	</bean>
+
 </beans>

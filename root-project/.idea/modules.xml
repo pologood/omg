@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../omg-framework-data/omg-framework-data.iml" filepath="$PROJECT_DIR$/../omg-framework-data/omg-framework-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-framework/omg-framework.iml" filepath="$PROJECT_DIR$/../omg-framework/omg-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-framework/omg-framework-common-utils/omg-framework-common-utils.iml" filepath="$PROJECT_DIR$/../omg-framework/omg-framework-common-utils/omg-framework-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-framework/omg-framework-common-utils/omg-framework/omg-framework-common-utils.iml" filepath="$PROJECT_DIR$/../omg-framework/omg-framework-common-utils/omg-framework/omg-framework-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../omg-framework/omg-framework-data/omg-framework-data.iml" filepath="$PROJECT_DIR$/../omg-framework/omg-framework-data/omg-framework-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx.iml" />
       <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg-xxx-dal.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg-xxx-dal.iml" />
       <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-service/omg-xxx-service.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-service/omg-xxx-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg.xxx.dal.iml" filepath="$PROJECT_DIR$/../omg-xxx/omg-xxx-dal/omg.xxx.dal.iml" />
     </modules>
   </component>
 </project>

@@ -22,7 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="omg-framework-data" />
         <module name="omg.xxx.dal" />
       </profile>
       <profile default="false" name="Annotation profile for omg-xxx-dal" enabled="true">
@@ -39,9 +38,25 @@
         <processorPath useClasspath="true" />
         <module name="omg-xxx-service" />
       </profile>
+      <profile default="false" name="Annotation profile for omg-framework-data" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="omg-framework-data" />
+      </profile>
+      <profile default="false" name="Annotation profile for omg-framework-common-utils" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="omg-framework-common-utils" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="omg-framework-data" target="1.5" />
+      <module name="omg-framework" target="1.5" />
+      <module name="omg-framework-common-utils" target="1.7" />
+      <module name="omg-framework-data" target="1.7" />
       <module name="omg-xxx" target="1.7" />
       <module name="omg-xxx-dal" target="1.7" />
       <module name="omg-xxx-service" target="1.7" />
